@@ -4,6 +4,7 @@ const loginFormHandler = async function(event) {
   const usernameEl = document.querySelector('#username-input-login');
   const passwordEl = document.querySelector('#password-input-login');
 
+  // Check database for matching email and password
   const response = await fetch('/api/user/login', {
     method: 'POST',
     body: JSON.stringify({
@@ -13,6 +14,7 @@ const loginFormHandler = async function(event) {
     headers: { 'Content-Type': 'application/json' },
   });
 
+  // Display dashboard is user matches
   if (response.ok) {
     document.location.replace('/dashboard');
   } else {
@@ -21,5 +23,5 @@ const loginFormHandler = async function(event) {
 };
 
 document
-  .querySelector('#login-form')
+  .querySelector('.login-form')
   .addEventListener('submit', loginFormHandler);

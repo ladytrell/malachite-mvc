@@ -66,10 +66,6 @@ input {
     padding: 10px;
 }
 
-.card-header h2 {
-  color: var(--primary);
-}
-
 .btn {
   font-size: 1.3rem;
   text-decoration: none;
@@ -178,6 +174,10 @@ input {
   background-color: var(--dark);
   padding: 1%;
   border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+}
+
+.card-header h2 {
+  color: var(--primary);
 }
 
 .card-body {
