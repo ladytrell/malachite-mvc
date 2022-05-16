@@ -5,6 +5,7 @@ const signupFormHandler = async function(event) {
   const emailEl = document.querySelector('#email-signup');
   const passwordEl = document.querySelector('#password-input-signup');
 
+  // Make API call to create a user
   const response = await fetch('/api/user', {
     method: 'POST',
     body: JSON.stringify({

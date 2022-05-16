@@ -13,10 +13,10 @@ const loginFormHandler = async function(event) {
     }),
     headers: { 'Content-Type': 'application/json' },
   });
-
+console.log('req.session.loggedIn', req.session.loggedIn);
   // Display dashboard is user matches
   if (response.ok) {
-    document.location.replace('/dashboard');
+    document.location.replace('/dashboard/');
   } else {
     alert('Failed to login');
   }
