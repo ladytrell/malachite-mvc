@@ -3,7 +3,7 @@ const { Post, Comment, User } = require('../models/');
 
 // get all posts for homepage
 router.get('/', async (req, res) => {
-  console.log(req.session);
+  console.log('homepage', req.session);
   try {
     // we need to get all Posts and include the User for each (change lines 8 and 9)
     const postData = await Post.findAll({      

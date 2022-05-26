@@ -13,10 +13,13 @@ const loginFormHandler = async function(event) {
     }),
     headers: { 'Content-Type': 'application/json' },
   });
-console.log('req.session.loggedIn', req.session.loggedIn);
+//console.log('req.session.loggedIn', req.session.loggedIn);
+
+//console.log('response.ok', response.ok);
   // Display dashboard is user matches
   if (response.ok) {
-    document.location.replace('/dashboard/');
+    console.log('login.js', document.location)
+    document.location.replace('/dashboard');
   } else {
     alert('Failed to login');
   }

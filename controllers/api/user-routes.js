@@ -50,6 +50,7 @@ router.post('/login', async (req, res) => {
 
       res.json({ user, message: 'You are now logged in!' });
     });
+    //return res;
   } catch (err) {
     res.status(400).json({ message: 'No user account found!' });
   }
@@ -64,6 +65,8 @@ router.post('/logout', (req, res) => {
   } else {
     res.status(404).end();
   }
+  
+  console.log('logout', req.session);
 });
 
 module.exports = router;
