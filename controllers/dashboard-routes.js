@@ -10,7 +10,7 @@ router.get('/', withAuth, async (req, res) => {
 
     const postData = await Post.findAll({ 
       where: { 
-        user_id: req.session.id
+        user_id: req.session.userId
       }  ,   
       include: [
         {
@@ -40,9 +40,10 @@ router.get('/', withAuth, async (req, res) => {
 
 router.get('/new', withAuth, (req, res) => {
   // what view should we send the client when they want to create a new-post? (change this next line)
-  res.render('hmmmm what goes here', {
+  res.render('new-post', {
     // again, rendering with a different layout than main! no change needed
     layout: 'dashboard',
+    user_id: req.session.userId
   });
 });
 
