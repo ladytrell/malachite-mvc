@@ -2,7 +2,7 @@
   
   ## Description
 
- A posting techology blogs.  The backend is a database with tables for comments, posts and user.  Table rows can be modified, added and removed from any of the table.  
+ A posting site for technology blogs.  The backend is a database with tables for comments, posts and user.  Table rows can be modified, added and removed from any of the table.  Only signed in users can create, edit or delete posts or view and add comments.
 
 
   ## Table of Contents (Optional)
