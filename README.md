@@ -4,7 +4,7 @@
 
  A posting site for technology blogs.  The backend is a database with tables for comments, posts and user.  Table rows can be modified, added and removed from any of the table.  Only signed in users can create, edit or delete posts or view and add comments.
 
- https://cryptic-ocean-52081.herokuapp.com/ | https://git.heroku.com/cryptic-ocean-52081.git
+ Try it out  at [Tech Blog](https://cryptic-ocean-52081.herokuapp.com/)
 
   ## Table of Contents (Optional)
 
