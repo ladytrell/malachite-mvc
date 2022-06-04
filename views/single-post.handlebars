@@ -2,13 +2,13 @@
 
 {{#if loggedIn}}
 <form class="comment-form" id="new-comment-form">
-  <div>
+  <div class="flex-row">
     <label for="comment-body">Comment</label>
-    <textarea name="comment-body"></textarea>
+    <textarea class="col-12" name="comment-body"></textarea>
   </div>
 
   <div>
-    <button type="submit">add comment</button>
+    <button class="btn" type="submit">add comment</button>
   </div>
 </form>
 {{/if}}

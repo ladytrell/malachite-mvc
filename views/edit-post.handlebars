@@ -8,15 +8,15 @@
             <div>
                 <label for="newTitle">Title:</label>
                 <!--<textarea name="post-title" id="newTitle">{{post.title}}</textarea>-->
-                <input name="post-title" id="newTitle" value="{{post.title}}" />
+                <input class="col-12" name="post-title" id="newTitle" value="{{post.title}}" />
             </div>
-            <div>
+            <div class="flex-row">
                 <label for="password-input-login">Post Content:</label>
-                <textarea name="post-body" id="newPostBody">{{post.content}}</textarea> 
+                <textarea class="col-12" name="post-body" id="newPostBody">{{post.content}}</textarea> 
             </div>
             <div>
-                <button type="submit" id="edit-post-form">Update Post</button>
-                <button type="click" id="delete-btn">Delete Post</button>
+                <button class="btn" type="submit" id="edit-post-form">Update Post</button>
+                <button class="btn" type="click" id="delete-btn">Delete Post</button>
             </div>
         </form>
     </div>
