@@ -7,14 +7,16 @@
         <form id="edit-post-form" data-id={{post.id}}>
             <div>
                 <label for="newTitle">Title:</label>
-                <textarea name="post-title" id="newTitle">{{post.title}}</textarea>
+                <!--<textarea name="post-title" id="newTitle">{{post.title}}</textarea>-->
+                <input name="post-title" id="newTitle" value="{{post.title}}" />
             </div>
             <div>
                 <label for="password-input-login">Post Content:</label>
                 <textarea name="post-body" id="newPostBody">{{post.content}}</textarea> 
             </div>
             <div>
-                <button type="submit" id="delete-btn">Delete Post</button>
+                <button type="submit" id="edit-post-form">Update Post</button>
+                <button type="click" id="delete-btn">Delete Post</button>
             </div>
         </form>
     </div>
