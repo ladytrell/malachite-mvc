@@ -46,10 +46,20 @@ router.get('/post/:id', async (req, res) => {
     if (postData) {
       // serialize the data
       const post = postData.get({ plain: true });
+      
+      let view;
+      if (post.user_id === req.session.userId ){
+        view = 'edit-post';
+      } else {
+        view = 'single-post';
+      }
+
       // which view should we render for a single-post?
-      res.render('single-post', { 
+      //res.render('single-post', { 
+      res.render(view, { 
         post,
-        loggedIn: req.session.loggedIn });
+        loggedIn: req.session.loggedIn
+       });
     } else {
       res.status(404).end();
     }

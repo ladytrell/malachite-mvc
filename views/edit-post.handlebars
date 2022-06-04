@@ -1,0 +1,23 @@
+
+<article class="card">
+    <div class="card-header flex-row justify-space-between">
+        <p>Edit Post</p>
+    </div>
+    <div class="card-body">
+        <form id="edit-post-form" data-id={{post.id}}>
+            <div>
+                <label for="newTitle">Title:</label>
+                <textarea name="post-title" id="newTitle">{{post.title}}</textarea>
+            </div>
+            <div>
+                <label for="password-input-login">Post Content:</label>
+                <textarea name="post-body" id="newPostBody">{{post.content}}</textarea> 
+            </div>
+            <div>
+                <button type="submit" id="delete-btn">Delete Post</button>
+            </div>
+        </form>
+    </div>
+</article>
+
+<script src="/js/edit.js"></script>

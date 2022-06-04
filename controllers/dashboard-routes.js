@@ -56,7 +56,7 @@ router.get('/edit/:id', withAuth, async (req, res) => {
       // serializing the data
       const post = postData.get({ plain: true });
       // which view should we render if we want to edit a post?
-      res.render('hmmmm what goes here', {
+      res.render('edit-post', {
         layout: 'dashboard',
         post,
       });
